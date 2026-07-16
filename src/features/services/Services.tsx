@@ -14,7 +14,7 @@ export default function Service() {
           align="center"
         />
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <Reveal key={service.id} delay={index * 0.15}>
               <ServiceCard

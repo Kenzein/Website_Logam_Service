@@ -17,10 +17,10 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
       }}
       loop
       grabCursor
-      speed={800}
+      speed={5000}
       spaceBetween={24}
       autoplay={{
-        delay: 3000,
+        delay: 0,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       }}
@@ -37,7 +37,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
       }}
     >
       {reviews.map((review) => (
-        <SwiperSlide key={review.name}>
+        <SwiperSlide key={review.id}>
           {" "}
           <ReviewCard {...review} />
         </SwiperSlide>

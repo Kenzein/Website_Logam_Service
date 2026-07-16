@@ -14,7 +14,7 @@ export default function ServiceCard({
   description,
 }: ServiceCardProps) {
   return (
-    <article className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+    <article className="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       <img
         src={image}
         alt={title}
