@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import ReviewCard from "./ReviewCard";
@@ -11,14 +11,12 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
   return (
     <Swiper
       className="pb-8"
-      modules={[Autoplay, Pagination]}
-      pagination={{
-        clickable: true,
-      }}
+      modules={[Autoplay, Pagination, FreeMode]}
+      freeMode
       loop
       grabCursor
-      speed={5000}
       spaceBetween={24}
+      speed={6000}
       autoplay={{
         delay: 0,
         disableOnInteraction: false,

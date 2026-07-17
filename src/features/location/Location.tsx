@@ -10,7 +10,7 @@ import { location } from "./location.data";
 
 export default function Location() {
   return (
-    <section id="lokasi" className="bg-slate-200 py-24">
+    <section id="lokasi" className="bg-slate-100 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           badge="Lokasi"
@@ -32,23 +32,29 @@ export default function Location() {
             </Reveal>
           </div>
           {/* Informasi */}
-          <div className="flex flex-col justify-center space-y-5">
+          <div className="flex flex-col justify-center space-y-5 ">
             <Reveal delay={0.3}>
               <LocationInfoCard
                 icon={HiOutlineMapPin}
                 title="Alamat"
                 value={location.address}
               />
+            </Reveal>
+            <Reveal delay={0.4}>
               <LocationInfoCard
                 icon={HiOutlineClock}
                 title="Jam Operasional"
                 value={location.hours}
               />
+            </Reveal>
+            <Reveal delay={0.5}>
               <LocationInfoCard
                 icon={HiOutlinePhone}
                 title="Telepon"
                 value={location.phone}
               />
+            </Reveal>
+            <Reveal delay={0.6}>
               <a
                 href={location.googleMapsUrl}
                 target="_blank"

@@ -29,7 +29,7 @@ export default function Contact() {
                     Nomor WhatsApp
                   </h3>
 
-                  <p className="mt-1 text-slate-600">+62 812 3456 7890</p>
+                  <p className="mt-1 text-slate-600">+62 852 7047 3551</p>
                 </div>
               </div>
 

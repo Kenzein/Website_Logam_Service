@@ -15,14 +15,16 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-300">
+    <footer className="bg-slate-200 text-slate-950">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
           {/* Brand */}
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold text-white">LOGAM SERVICE</h2>
+            <h2 className="text-2xl font-bold ">
+              LOGAM <span className="text-blue-600">SERVICE</span>
+            </h2>
 
-            <p className="mt-4 leading-7 text-slate-400">
+            <p className="mt-4 leading-7 font-semibold">
               Bengkel sepeda motor profesional yang siap membantu perawatan,
               servis berkala, tune up, hingga perbaikan mesin dengan teknisi
               berpengalaman dan peralatan modern.
@@ -31,14 +33,14 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-lg font-semibold text-white">Navigasi</h3>
+            <h3 className="text-lg font-semibold">Navigasi</h3>
 
             <ul className="mt-4 space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="transition-colors hover:text-white"
+                    className="transition-colors hover:text-gray-600"
                   >
                     {link.label}
                   </a>
@@ -49,16 +51,19 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold text-white">Informasi</h3>
+            <h3 className="text-lg font-semibold text-black">Informasi</h3>
 
-            <ul className="mt-6 space-y-4 text-slate-300">
+            <ul className="mt-6 space-y-4 text-slate-900">
               <li className="flex items-start gap-3">
                 <HiOutlineMapPin className="mt-1 text-xl text-blue-400" />
-                <span>Jl. Raya Medan</span>
+                <span>
+                  Jl. Sulang-Silima No.01, Sidikalang, Kabupaten Dairi, Sumatera
+                  Utara
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <HiOutlinePhone className="text-xl text-blue-400" />
-                <span>+62 812 3456 7890</span>
+                <span>+62 852 7047 3551</span>
               </li>
               <li className="flex items-start gap-3">
                 <HiOutlineClock className="mt-1 text-xl text-blue-400" />

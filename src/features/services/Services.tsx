@@ -4,7 +4,7 @@ import { services } from "./service.data";
 
 export default function Service() {
   return (
-    <section id="layanan" className="bg-slate-200 py-24">
+    <section id="layanan" className="bg-slate-100 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           badge="Layanan"

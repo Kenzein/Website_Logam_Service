@@ -21,7 +21,7 @@ export const services: Service[] = [
     title: "Tune Up",
     description: "Penyetelan mesin agar lebih bertenaga dan hemat bahan bakar",
     icon: HiOutlineCog6Tooth,
-    image: `${import.meta.env.BASE_URL}/images/remote.jpeg`,
+    image: `${import.meta.env.BASE_URL}/images/acsesoris.jpeg`,
   },
   {
     id: 3,
@@ -49,6 +49,6 @@ export const services: Service[] = [
     title: "Cuci & Detailing",
     description: "Membersihkan motor hingga tampak seperti baru kembali.",
     icon: HiOutlineSparkles,
-    image: `${import.meta.env.BASE_URL}/images/remote.jpeg`,
+    image: `${import.meta.env.BASE_URL}/images/injeksi.jpeg`,
   },
 ];

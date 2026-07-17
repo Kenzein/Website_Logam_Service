@@ -10,9 +10,9 @@ export default function Navbar() {
   };
   return (
     <>
-      <nav className="fixed top-0 z-50 w-full bg-black/80 backdrop-blur">
+      <nav className="fixed top-0 z-50 w-full bg-white/90 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-          <a href="#hero" className="text-2xl font-bold text-white">
+          <a href="#hero" className="text-2xl font-bold text-black">
             Logam <span className="text-blue-500">Service</span>
           </a>
           {/* Desktop Menu */}
@@ -21,7 +21,7 @@ export default function Navbar() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="relative text-white transition-colors duration-300 hover:text-blue-500 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
+                  className="relative  transition-colors duration-300 hover:text-blue-500 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
                 >
                   {item.label}
                 </a>
