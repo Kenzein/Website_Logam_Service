@@ -4,7 +4,6 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      // className="relative flex min-h-screen items-center bg-linear-to-r from-slate-950 via-slate-900 to-blue-950"
       className="relative flex min-h-screen items-center bg-slate-100"
     >
       <div className="mx-auto max-w-7xl px-6 py-32">
