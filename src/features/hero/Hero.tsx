@@ -10,7 +10,7 @@ export default function Hero() {
         <span className="rounded-full bg-blue-600 px-4 py-2 text-sm text-white">
           Bengkel Terpercaya Sidikalang
         </span>
-        <h1 className="mt-6 text-5xl font-bold md:text-7xl">
+        <h1 className="mt-6 text-5xl font-bold md:text-7xl leading-tight">
           LOGAM <br />
           <span className="text-blue-500">SERVICE</span>
         </h1>
